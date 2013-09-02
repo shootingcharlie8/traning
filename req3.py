@@ -6,9 +6,9 @@ GPIO.setup(12, GPIO.OUT)
 
 while(1):
 	lul = GPIO.input(11)
-	print(lul)
+;	print(lul)
 	if lul:
-		GPIO.output(12, True)
+		print('IO 11 is open')
 	else:
-		GPIO.output(12, False)
+		print('IO 11 is closed')
 	time.sleep(0.1)
